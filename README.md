@@ -1,2 +1,3 @@
 # food-index
-project jf Matyash Elena
+project of Matyash Elena
+
