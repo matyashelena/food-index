@@ -129,6 +129,34 @@ body {
   background-size: cover;
   background-position: top center;
 }
+.slide-autumn {
+  background-image: url(../img/slide-autumn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.slide-vitamins {
+  background-image: url(../img/slide-vitamins.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.swiper {
+  position: relative;
+}
+.slider-buttons {
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+.slider-button {
+  cursor: pointer;
+}
 .slide::before {
   content: "";
   position: absolute;
@@ -286,14 +314,14 @@ body {
 .tabs-content {
   display: flex;
   justify-content: space-between;
-  margin: 0 -18px;
+  margin: -18px;
 }
 .tabs-card {
   max-width: 270px;
   border-radius: 20px;
   overflow: hidden;
   background-color: #fff;
-  margin: 0 18px;
+  margin: 18px;
 }
 .tabs {
   display: flex;
@@ -404,13 +432,13 @@ body {
 .benefits-cards {
   display: flex;
   justify-content: space-between;
-  margin: 0 -18px;
+  margin: -18px;
 }
 .benefits-card {
   max-width: 270px;
   text-align: center;
   padding: 30px 20px;
-  margin: 0 18px;
+  margin: 18px;
   border-radius: 30px;
   box-shadow: 2px 5px 8px 0px rgba(34, 60, 80, 0.25);
 }
@@ -429,4 +457,104 @@ body {
   line-height: 22px;
   color: #49494F;
 }
-
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+  .search-form {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .tabs-content {
+    flex-wrap: wrap;
+  }
+  .tabs-card {
+    flex: 50%;
+    max-width: calc(50% - 36px);
+  }
+  .benefits-cards {
+    flex-wrap: wrap;
+  }
+  .benefits-card {
+    flex: 50%;
+    max-width: calc(50% - 36px);
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .slide {
+    padding: 70px;
+  }
+  .delivery-card {
+    width: calc(50% - 30px);
+  }
+  .footer-logo {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .search-form {
+    order: 5;
+    margin: 10px 0;
+  }
+  .promo {
+    flex-wrap: wrap;
+  }
+  .footer-link {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+  .slide {
+    padding: 40px 50px;
+  }
+  .slide-title {
+    font-size: 40px;
+  }
+  .delivery-week {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .delivery-card {
+    width: 100%;
+  }
+  .section-title {
+    font-size: 25px;
+  }
+  .tabs {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .tabs-item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .tabs-card,
+  .benefits-card {
+    max-width: 100%;
+  }
+  .benefits {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  .social-links {
+    flex-wrap: wrap;
+  }
+  .social-link {
+    margin-bottom: 10px;
+  }
+  .footer-logo {
+    margin-right: 20px;
+  }
+}
